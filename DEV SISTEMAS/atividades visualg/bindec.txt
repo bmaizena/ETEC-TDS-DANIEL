@@ -1,0 +1,29 @@
+Algoritmo "exDecToBin"
+
+Var
+   tot_bin, x: inteiro
+   bin: caracter
+   n, decimal: real
+
+
+Inicio
+   escreval ("Digite um número binario para converter em decimal: ")
+   leia(bin)
+   tot_bin <- compr(bin)
+
+   para x de tot_bin ate 0 passo -1 faca
+
+      se (copia(bin;x;1)) = "0" entao
+         n <- 0
+      senao
+         escreval ( 2 ^ x )
+      fimse
+   fimpara
+   escreval (n)
+
+
+
+
+
+
+Fimalgoritmo

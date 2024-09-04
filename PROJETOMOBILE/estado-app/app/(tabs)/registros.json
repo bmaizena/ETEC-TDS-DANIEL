@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Lorenzeti Iteznerol", 
+        "id": "001",
+        "email": "lorenzetti@gmail.com", 
+        "telefone": "(13)92342-9876", 
+        "data_nascimento": "24/01/1968", 
+        "sexo": "M"},
+    
+     {
+        "name": "Daniel Pontes",
+        "id": "002",
+        "email": "danielsallesse@gmail.com",
+        "telefone": "(13)99122-5846",
+        "data_nascimento": "04/04/1998",
+        "sexo": "M"
+    },
+    {
+        "name": "Saliba Rolex",
+        "id": "003",
+        "email": "saliba@gmail.com",
+        "telefone": "(13)99283-9916",
+        "data_nascimento": "21/12/1991",
+        "sexo": "M"
+    },
+     {
+        "name": "Carla Megana",
+        "id": "004",
+        "email": "carla@gmail.com",
+        "telefone": "(13)98723-5986",
+        "data_nascimento": "03/10/1988",
+        "sexo": "F"
+    },
+    {
+        "name": "Larissa Ribeiro",
+        "id": "005",
+        "email": "larissa@gmail.com",
+        "telefone": "(15)97343-9877",
+        "data_nascimento": "13/06/2000",
+        "sexo": "F"
+    },
+    {
+        "name": "Miguel Silva",
+        "id": "006",
+        "email": "miguel@gmail.com",
+        "telefone": "(13)997615-9096",
+        "data_nascimento": "22/09/1989",
+        "sexo": "M"
+    },
+     {
+        "name": "Débora Marcia",
+        "id": "007",
+        "email": "debora@gmail.com",
+        "telefone": "(13)92323-5006",
+        "data_nascimento": "01/01/1967",
+        "sexo": "F"
+    },
+    {
+        "name": "Maria Mariana",
+        "id": "008",
+        "email": "maria@gmail.com",
+        "telefone": "(21)99043-1177",
+        "data_nascimento": "19/03/1956",
+        "sexo": "F"
+    }
+    
+]

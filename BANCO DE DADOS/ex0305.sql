@@ -1,0 +1,1 @@
+SELECT * FROM vendas WHERE id_produto> 1 AND data_venda>'2024-04-19' ORDER BY quantidade_vendida;

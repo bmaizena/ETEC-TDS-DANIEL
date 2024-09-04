@@ -1,0 +1,34 @@
+atividades PA
+
+01 - 
+
+1- obter total da conta
+2- obter  quantidade de amigos
+3- dividir total da conta pela quantidade de amigos
+4- mostrar valor final 
+
+02-
+
+1- obter email
+2- obter senha
+3- se email e senha = verdade
+	mostrar ''login feito com sucesso''
+     senão
+	mostrar ''email ou senha inválidos''
+
+03 - 
+
+a. Verdadeiro
+
+b. Falso
+
+c.
+  i. Falso
+  ii.Verdadeiro
+  iii.Verdadeiro
+  iv.Falso
+
+  i.Falso
+  ii.Falso
+  iii.Falso
+  iv.Falso

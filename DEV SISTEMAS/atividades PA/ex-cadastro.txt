@@ -1,0 +1,9 @@
+1- abrir site
+
+2- verificar se o e-mail já existe no sistema
+
+3- se e-mail = verdadeiro
+	mostrar = 'e-mail já cadastrado!' 
+		  'Insira a senha ou recupere a senha'
+   senão:
+	mostrar = 'continue o cadastro...'

@@ -1,0 +1,236 @@
+program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula003
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            /*Aluno primeiroAluno = new Aluno();
+
+            primeiroAluno.nomeAluno = "Daniel Sallesse";
+            primeiroAluno.idadeAluno = 25;
+            primeiroAluno.notaAluno = 7.5;
+            primeiroAluno.exibirDados();
+
+            Aluno segundoAluno = new Aluno();
+
+            segundoAluno.nomeAluno = "Rogério Vaughan";
+            segundoAluno.idadeAluno = 52;
+            segundoAluno.notaAluno = 3.5;
+            segundoAluno.exibirDados();
+
+            Aluno terceiroAluno = new Aluno();
+
+            terceiroAluno.nomeAluno = "Andre Henning";
+            terceiroAluno.idadeAluno = 45;
+            terceiroAluno.notaAluno = 9.5;
+            terceiroAluno.exibirDados();*/
+
+            Turma primeiraTurma = new Turma();
+
+            primeiraTurma.cod = 1;
+            primeiraTurma.serie = "A";
+            primeiraTurma.exibir();
+
+            Turma segundaTurma = new Turma();
+
+            segundaTurma.cod = 2;
+            segundaTurma.serie = "B";
+            segundaTurma.exibir();
+
+            Turma terceiraTurma = new Turma();
+
+            terceiraTurma.cod = 3;
+            terceiraTurma.serie = "C";
+            terceiraTurma.exibir();
+
+
+        }
+    }
+}
+
+Turma:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula003
+{
+    internal class Turma
+    {
+        public int cod;
+        public string serie;
+
+        public void exibir()
+        {
+            Console.WriteLine($"{cod}°{serie}");
+        }
+            
+    }
+}
+
+Aluno:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula003
+{
+    internal class Aluno
+    {
+        public String nomeAluno;
+        public int idadeAluno;
+        public Double notaAluno;
+
+        public void exibirDados()
+        {
+            Console.WriteLine($" Aluno: {nomeAluno} \n Idade: {idadeAluno} \n Nota: {notaAluno} \n");
+        }
+
+    }
+}
+
+
+
+
+
+
+namespace ProjetoClasses
+{
+    internal class Veiculo
+    {
+        private String placa;
+        private String cor;
+        private int ano;
+
+        //-------------------------------------
+        public String getPlaca()
+        {
+            return placa;
+        }
+        public void setPlaca(String p)
+        {
+            placa = p.ToUpper();
+        }
+        //--------------------------------------
+        public String getCor()
+        {
+            return cor;
+        }
+        public void setCor(String c)
+        {
+            cor = c;
+        }
+        //---------------------------------------
+        public int getAno()
+        {
+            return ano;
+        }
+        public void setAno(int a)
+        {
+            ano = a;
+        }
+        //----------------------------------------
+        public void exibir()
+        {
+            Console.WriteLine($"----DADOS DO VEI01---- \na placa do veiculo é {placa} \na cor do veiculo é {cor} \no ano do veiculo é {ano} \n");
+        }
+    }
+}
+
+
+namespace ProjetoClasses
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Veiculo vei01 = new Veiculo();
+            vei01.setPlaca("ayu7683");
+            vei01.setCor("azul");
+            vei01.setAno(2006);
+
+
+            vei01.exibir();
+
+            Console.WriteLine("----DADOS DO VEI01----");
+            Console.WriteLine($"a placa do veiculo é {vei01.getPlaca()}");
+            Console.WriteLine($"o ano do veiculo é {vei01.getAno()}");
+            Console.WriteLine($"a cor do veiculo é {vei01.getCor()}");
+
+
+
+
+        Curso gastronomia = new Curso();
+        gastronomia.id = 66;
+        gastronomia.setNome("Restaurante 7 Vidas");
+
+        gastronomia.prof = new Professor();
+        gastronomia.prof.setMatricula(12);
+        gastronomia.prof.setNome("Erico Jaquinho");
+
+        gastronomia.mod = new Modalidade();
+        gastronomia.mod.setCodigo(7);
+        gastronomia.mod.setCategoria("Presencial");
+    }
+}
+
+
+
+
+
+namespace projetoRevisao
+{
+    internal class Curso
+    {
+        public int id;
+        private string nome;
+        public Professor prof;
+        public Modalidade mod;
+
+
+        public void setNome(String nome)
+        {
+            this.nome = nome.ToUpper();
+        }
+
+    }
+
+
+
+namespace projetoRevisao
+{
+    internal class Professor
+    {
+        private int matricula;
+        private String nome;
+
+        public void setMatricula(int matricula)
+        {
+            this.matricula = matricula;
+        }
+
+        public void setNome(string nome)
+        {
+            this.nome = nome.ToUpper();
+        }
+    }
+}
+
+
+

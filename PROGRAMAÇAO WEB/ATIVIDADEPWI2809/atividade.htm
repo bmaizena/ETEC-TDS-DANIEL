@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade PW</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap');
+        
+        body {
+            background-color: rgb(161, 161, 161);
+            font-family:  'Inter', sans-serif;
+            font-size: 1.3em;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
+
+        }
+        table {
+            border-collapse: collapse;
+            margin-left: 40px;
+            
+        }
+        h1{
+            text-indent: 30px;
+            color: rgb(37, 82, 16);
+        }
+        section {
+            text-indent: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.644);
+            
+            
+        }
+        #inicio {
+            background-image: url(GOW-7-4K.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.644);
+        }
+        td {
+            padding: 10px;
+            background-color: rgb(165, 158, 150);
+        }
+        ol > li {
+            border-bottom: 1px solid yellowgreen;
+            list-style: none;
+            transition: 0.5s;
+            
+        }
+
+        ul > li {
+            border-bottom: 1px solid rgb(245, 245, 4);
+            border-top: 1px solid rgb(236, 233, 21);
+            margin-bottom: 20px;
+            background-color: beige;
+            padding: 15px;
+            list-style: none;
+            transition: 0.5s;
+        }
+        li:hover {
+            background-color: rgb(168, 116, 47);
+            font-size: 1.5em;
+            color: white;
+            
+            transition: 0.5s;
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <header id="inicio" style="background-color: rgb(209, 148, 73); padding: 10px; margin: 20px;">
+        <nav>
+            <ul>
+                <li><a href="#dadospessoais">Dados Pessoais</a></li>
+                <li><a href="#escolaridade">Escolaridade</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#">Areas de interesses</a></li>
+                <li><a href="#">Experiências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dadospessoais" style="background-color: bisque; padding: 10px; margin: 20px;">
+            <article>
+                <header><h1>Dados Pessoais</h1></header>
+                <table border= "1px solid black">
+                    <tr>
+                        <td>Nome:</td>
+                        <td>Daniel Sallesse</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>danielsallesse@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td>(13)991225846</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <section id="escolaridade" style="background-color: rgb(199, 178, 152); padding: 10px; margin: 20px;">
+            <article>
+                <header><h1>Escolaridade</h1></header>
+                <ul>
+                    <li><b>Curso Técnico Patisserie & Boulangerie</b>
+                        <br>
+                        Centro Europeu
+                    </li>
+                    <li><b>Curso Técnico ADS</b>
+                        <br>
+                        Centro Paula Souza
+                    </li>
+                    <li><b>Ensino Médio (2015)</b>
+                        <br>
+                        Capitão Bernado Ferreira Machado
+                    </li>
+                    
+                </ul>
+            </article>
+        </section>
+
+        <section id="cursos" style="background-color: rgb(165, 143, 117); padding: 10px; margin: 20px;">
+            <article>
+                <header><h1>Cursos</h1></header>
+            </article>
+            <ol>
+                <li>Patisserie & Boulangerie</li>
+                <li>Análise e Desenvolvimento de Sistemas</li>
+                <li>HTML e CSS</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
+
+        <section id="contato" style="background-color: rgb(126, 113, 98); padding: 10px; margin: 20px;">
+            <article>
+                <header><h1>Contato</h1></header>
+                <div style="display: flex; justify-content: space-around;">
+                    <div>
+                        <p><a href="mailto: danielsallesse@gmail.com">Daniel Sallesse</a></p>
+                        <p><a href="tel:+5513991225846">(13)991225846</a></p>
+                        <p>
+                            <a href="https://wa.me/5513991225846">
+                                <img src="whatsapp.webp" width="50px"> whatsapp
+                            </a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <form action="#">
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" name="email" id="email">
+                            <br>
+                            <label for="msg">Mensagem:</label>
+                            <br>
+                            <textarea cols="50" rows="5"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

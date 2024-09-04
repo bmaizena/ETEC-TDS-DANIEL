@@ -1,0 +1,10 @@
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\bin\Debug\PrimeiroProjetoDesktop.exe.config
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\bin\Debug\PrimeiroProjetoDesktop.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\bin\Debug\PrimeiroProjetoDesktop.pdb
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.csproj.AssemblyReference.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.Form1.resources
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.Properties.Resources.resources
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.csproj.GenerateResource.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.csproj.CoreCompileInputs.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\PrimeiroProjetoDesktop\PrimeiroProjetoDesktop\obj\Debug\PrimeiroProjetoDesktop.pdb

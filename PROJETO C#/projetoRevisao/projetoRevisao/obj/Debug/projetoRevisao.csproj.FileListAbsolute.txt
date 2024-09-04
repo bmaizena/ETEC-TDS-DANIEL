@@ -1,0 +1,7 @@
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\bin\Debug\projetoRevisao.exe.config
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\bin\Debug\projetoRevisao.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\bin\Debug\projetoRevisao.pdb
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\obj\Debug\projetoRevisao.csproj.AssemblyReference.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\obj\Debug\projetoRevisao.csproj.CoreCompileInputs.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\obj\Debug\projetoRevisao.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\projetoRevisao\projetoRevisao\obj\Debug\projetoRevisao.pdb

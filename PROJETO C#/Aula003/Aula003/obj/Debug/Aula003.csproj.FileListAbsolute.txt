@@ -1,0 +1,7 @@
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\bin\Debug\Aula003.exe.config
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\bin\Debug\Aula003.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\bin\Debug\Aula003.pdb
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\obj\Debug\Aula003.csproj.AssemblyReference.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\obj\Debug\Aula003.csproj.CoreCompileInputs.cache
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\obj\Debug\Aula003.exe
+C:\Users\F2-05\Desktop\ETEC-TDS-DANIEL\PROJETO C#\Aula003\Aula003\obj\Debug\Aula003.pdb

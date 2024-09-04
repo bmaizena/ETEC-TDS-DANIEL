@@ -1,0 +1,74 @@
+INSERT INTO cliente (
+	id_cliente,
+	nome_cliente,
+ 	endereco,
+	email,
+   num_tel
+	) 	
+VALUES(
+	105,	
+	"Alan Bida do Rego",
+	"Rua freicaneca 8923",
+	"bidarego@gmail.com",
+	"13673290890"
+	);
+
+
+sql
+-- Criação do banco de dados
+CREATE DATABASE Biblioteca;
+
+-- Utilização do banco de dados
+USE Biblioteca;
+
+
+CREATE TABLE Livros (
+    ID INT PRIMARY KEY,
+    Titulo VARCHAR(100),
+    Autor VARCHAR(100),
+    AnoPublicacao INT,
+    Genero VARCHAR(50)
+);
+
+
+Revisão de Banco de Dados
+
+O que é um banco de dados?
+R:  São coleções organizadas de dados que se relacionam ou não, com o objetivo de armazenar informações
+
+Qual a linguagem mais utilizada em Banco de Dados relacionais?
+R: SQL (Structured Query Language)
+
+O que é um banco de dados modelo relacional?
+R: modelo de banco de dados onde os dados são estruturados e organizados em linhas e colunas e as tabelas possuem relação entre si 
+
+Em um banco de dados relacional, o que são entidades, atributos e relacionamentos?
+R: entidades são os objetos que receberão informações e relacionamento    entre elas
+
+ Atributos são características da entidade
+ Relacionamentos é a associação entre entidades
+
+O que é DML e para que serve? Quais os comandos mais usados?
+R: linguagem de manipulação dos dados
+Inserção (INSERT)
+Atualização (UPDATE)
+Exclusão (DELETE)
+
+
+O que é a DQL e para que serve? Quais o comando mais usado?
+R: linguagem de consulta de dados 
+Recupera Dados (SELECT)
+
+
+Suponhamos que temos padaria como cliente e precisamos inserir um registro na tabela de produtos, os atributos são:
+
+Nome= café
+Valor=2,50
+Validade: 20/04/2025
+Categoria: alimentos
+
+Escreva utilizando a DML, a instrução para inserção desse registro.
+R:
+INSERT INTO produtos (nome, valor, validade, categoria)
+VALUES (“Café”, 2.5, “20-04-2025”, “alimentos”);
+

@@ -1,0 +1,121 @@
+			           PARTE 1
+1. 
+
+CREATE DATABASE mecanicaeauto;
+USE loja_informatica;
+------------------------------------------------------------------------------------------
+2. 
+
+CREATE TABLE Clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255),
+    telefone VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Funcionarios (
+    matricula INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    funcao VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Pecas(
+    codigo INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE Servico(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    servico_para INT,
+    atendido_por INT,
+    servico INT,
+    valor_total DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (servico_para) REFERENCES Clientes(id),
+    FOREIGN KEY (atendido_por) REFERENCES Funcionarios(matricula),
+    FOREIGN KEY (servico) REFERENCES Pecas(codigo)
+);
+
+------------------------------------------------------------------------------------------
+				PARTE 2	
+
+1. 
+Inserir Clientes:
+
+INSERT INTO Clientes (nome, endereco, telefone) VALUES
+('Claudio Silva', 'Rua A, 123', '1111-1111'),
+('Maria Oliveira',  'Rua B, 456', '2222-2222'),
+('José Santos', 'Rua C, 789', '3333-3333'),
+('Ana Lima', 'Rua D, 101', '4444-4444'),
+('Paulo Souza', 'Rua E, 202', '5555-5555');
+
+
+Inserir Funcionarios:
+
+INSERT INTO Funcionarios (nome, funcao) VALUES
+('João Pereira', 'Gerente'),
+('Luiza Mendes', 'Vendedora'),
+('Pedro Costa', 'Caixa'),
+('Fernanda Lima', 'Atendente'),
+('Ricardo Silva', 'Suporte Técnico');
+
+
+Inserir Pecas:
+
+INSERT INTO Pecas (codigo, nome, quantidade, valor) VALUES
+(1, 'Notebook', 50, 3000.00),
+(2, 'Mouse', 150, 50.00),
+(3, 'Teclado', 100, 100.00),
+(4, 'Monitor', 75, 800.00),
+(5, 'Impressora', 30, 600.00);
+
+
+Inserir Servico;
+
+INSERT INTO Servico (servico_para, atendido_por, servico, valor_total) VALUES
+(1, 1, 1, 3000.00),
+(2, 2, 2, 50.00),
+(3, 3, 3, 100.00),
+(4, 4, 4, 800.00),
+(5, 5, 5, 600.00);
+
+------------------------------------------------------------------------------------------
+2. 
+
+UPDATE Clientes SET endereco = 'Rua Nova, 111' WHERE id = 2;
+------------------------------------------------------------------------------------------
+3. 
+
+DELETE FROM Funcionarios WHERE matricula = 2;
+
+
+------------------------------------------------------------------------------------------
+                                                      PARTE 3
+4.
+
+SELECT * FROM Clientes;
+------------------------------------------------------------------------------------------
+5. 
+
+SELECT * FROM Servico WHERE valor_total >100;
+------------------------------------------------------------------------------------------
+6. 
+
+SELECT * FROM Clientes ORDER BY nome DESC;
+------------------------------------------------------------------------------------------
+   			    PARTE 4
+7. 
+
+SELECT nome as Meus_Clientes FROM Clientes;
+------------------------------------------------------------------------------------------
+8. 
+
+SELECT * FROM Servico
+INNER JOIN Clientes ON Servico;
+------------------------------------------------------------------------------------------
+9. 
+
+SELECT Servico.servico, Funcionarios.nome FROM Servico
+INNER JOIN Funcionarios ON Servico.servico = Funcionarios.matricula;
+

@@ -1,0 +1,226 @@
+CRIE UM BANCO DE DADOS COM O NOME loja_informatica
+2 - Crie as tabelas a seguir:
+Clientes:
+id int chave primaria auto incremental
+nome varchar não nulo
+idade inteiro
+endereço varchar
+telefone varchar não nulo
+
+Funcionarios:
+matricula int chave primaria auto incremental
+nome varchar não nulo
+idade inteiro
+função varchar não nulo
+telefone varchar
+
+Produtos:
+codigo int chave primaria 
+nome varchar não nulo
+quantidade inteiro não nulo
+valor decimal não nulo
+
+Vendas:
+id int chave primaria auto incremental
+vendido_para inteiro chave estrangeira para id cliente
+vendido_por inteiro chave estrangeira para matricula funcionário
+produto inteiro chave estrangeira com o código do produto na tabela produtos
+quantidade inteiro
+valor_unitario decimal não nulo
+
+
+
+
+
+
+3 - Inserir pelo menos 5 registros em cada tabela 
+4 – Fazer a alteração do endereço de 2 clientes 
+5 – Fazer a alteração da quantidade de produtos em estoque
+6 – Excluir as vendas realizadas para o último cliente. 
+7 – Excluir o funcionário com o id = 2 
+
+
+
+8 - Liste todos os registros da tabela clientes 
+9 - Liste todos os registros da tabela funcionários com idade superior a 30 anos
+10 - Liste todos os registros da tabela vendas com valor acima de 100 reais
+11 - Liste todos os registros da tabela produtos com o estoque maior que 50 unidades
+12 – Liste os clientes ordenando os registros pelo nome do cliente de forma decrescente. 
+13 – Liste os funcionários ordenando os registros pela idade de forma crescente.
+14 – Liste os produtos ordenando os registros pelo valor do produto do mais barato para o mais caro.
+
+
+
+15 - Liste apenas os nomes dos clientes e renomeie a forma de exibição da coluna para “Meus_clientes”.
+16 – Pegue todos os registros da tabela vendas e junte com os registros da tabela clientes
+17 – Pegue apenas o nome do produto da tabela vendas e junte com os apenas o nome do funcionário da tabela funcionário.
+18 – Repita os dois últimos exercícios alterando o nome de exibição das colunas com o comando “as”.
+ChatGPT
+ChatGPT
+Para criar e manipular um banco de dados chamado loja_informatica conforme as especificações, podemos usar comandos SQL estruturados. Aqui está o passo a passo:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+1. Criação do Banco de Dados:
+
+CREATE DATABASE loja_informatica;
+USE loja_informatica;
+------------------------------------------------------------------------------------------
+2. Criação das Tabelas:
+
+CREATE TABLE Clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT,
+    endereco VARCHAR(255),
+    telefone VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Funcionarios (
+    matricula INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT,
+    funcao VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20)
+);
+
+CREATE TABLE Produtos (
+    codigo INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE Vendas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vendido_para INT,
+    vendido_por INT,
+    produto INT,
+    quantidade INT,
+    valor_unitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (vendido_para) REFERENCES Clientes(id),
+    FOREIGN KEY (vendido_por) REFERENCES Funcionarios(matricula),
+    FOREIGN KEY (produto) REFERENCES Produtos(codigo)
+);
+
+------------------------------------------------------------------------------------------
+3. Inserir Registros:
+Inserir Clientes:
+
+INSERT INTO Clientes (nome, idade, endereco, telefone) VALUES
+('Carlos Silva', 30, 'Rua A, 123', '1111-1111'),
+('Maria Oliveira', 25, 'Rua B, 456', '2222-2222'),
+('José Santos', 40, 'Rua C, 789', '3333-3333'),
+('Ana Lima', 35, 'Rua D, 101', '4444-4444'),
+('Paulo Souza', 28, 'Rua E, 202', '5555-5555');
+
+
+Inserir Funcionarios:
+
+INSERT INTO Funcionarios (nome, idade, funcao, telefone) VALUES
+('João Pereira', 45, 'Gerente', '6666-6666'),
+('Luiza Mendes', 32, 'Vendedora', '7777-7777'),
+('Pedro Costa', 27, 'Caixa', '8888-8888'),
+('Fernanda Lima', 29, 'Atendente', '9999-9999'),
+('Ricardo Silva', 38, 'Suporte Técnico', '1010-1010');
+
+
+Inserir Produtos:
+
+INSERT INTO Produtos (codigo, nome, quantidade, valor) VALUES
+(1, 'Notebook', 50, 3000.00),
+(2, 'Mouse', 150, 50.00),
+(3, 'Teclado', 100, 100.00),
+(4, 'Monitor', 75, 800.00),
+(5, 'Impressora', 30, 600.00);
+
+
+Inserir Vendas:
+
+INSERT INTO Vendas (vendido_para, vendido_por, produto, quantidade, valor_unitario) VALUES
+(1, 1, 1, 1, 3000.00),
+(2, 2, 2, 2, 50.00),
+(3, 3, 3, 1, 100.00),
+(4, 4, 4, 3, 800.00),
+(5, 5, 5, 1, 600.00);
+
+------------------------------------------------------------------------------------------
+4. Alteração do Endereço de 2 Clientes:
+
+UPDATE Clientes SET endereco = 'Rua Nova, 111' WHERE id = 1;
+UPDATE Clientes SET endereco = 'Rua Nova, 222' WHERE id = 2;
+------------------------------------------------------------------------------------------
+5. Alteração da Quantidade de Produtos em Estoque:
+
+UPDATE Produtos SET quantidade = 45 WHERE codigo = 1;
+UPDATE Produtos SET quantidade = 140 WHERE codigo = 2;
+
+------------------------------------------------------------------------------------------
+6. Excluir Vendas Realizadas para o Último Cliente:
+
+DELETE FROM Vendas WHERE vendido_para = (SELECT id FROM Clientes ORDER BY id DESC LIMIT 1);
+------------------------------------------------------------------------------------------
+7. Excluir Funcionário com id = 2:
+
+DELETE FROM Funcionarios WHERE matricula = 2;
+------------------------------------------------------------------------------------------
+8. Listar Todos os Registros da Tabela Clientes:
+
+SELECT * FROM Clientes;
+------------------------------------------------------------------------------------------
+9. Listar Todos os Registros da Tabela Funcionarios com Idade Superior a 30 Anos:
+
+SELECT * FROM Funcionarios WHERE idade > 30;
+------------------------------------------------------------------------------------------
+10. Listar Todos os Registros da Tabela Vendas com Valor Acima de 100 Reais:
+
+SELECT * FROM Vendas WHERE valor_unitario > 100.00;
+------------------------------------------------------------------------------------------
+11. Listar Todos os Registros da Tabela Produtos com Estoque Maior que 50 Unidades:
+
+SELECT * FROM Produtos WHERE quantidade > 50;
+------------------------------------------------------------------------------------------
+12. Listar Clientes Ordenados pelo Nome em Ordem Decrescente:
+
+SELECT * FROM Clientes ORDER BY nome DESC;
+------------------------------------------------------------------------------------------
+13. Listar Funcionários Ordenados pela Idade em Ordem Crescente:
+
+SELECT * FROM Funcionarios ORDER BY idade ASC;
+------------------------------------------------------------------------------------------
+14. Listar Produtos Ordenados pelo Valor do Mais Barato ao Mais Caro:
+
+SELECT * FROM Produtos ORDER BY valor ASC;
+------------------------------------------------------------------------------------------
+15. Listar Apenas os Nomes dos Clientes e Renomear a Coluna:
+
+SELECT nome AS Meus_clientes FROM Clientes;
+------------------------------------------------------------------------------------------
+16. Juntar Registros da Tabela Vendas com Clientes:
+
+SELECT Vendas.*, Clientes.nome AS cliente_nome
+FROM Vendas
+JOIN Clientes ON Vendas.vendido_para = Clientes.id;
+------------------------------------------------------------------------------------------
+17. Juntar Nome do Produto da Tabela Vendas com Nome do Funcionário da Tabela Funcionários:
+
+SELECT Produtos.nome AS produto_nome, Funcionarios.nome AS funcionario_nome
+FROM Vendas
+JOIN Produtos ON Vendas.produto = Produtos.codigo
+JOIN Funcionarios ON Vendas.vendido_por = Funcionarios.matricula;
+------------------------------------------------------------------------------------------
+18. Repetir os Exercícios Anteriores Alterando o Nome das Colunas com o Comando "AS":
+Juntar Registros da Tabela Vendas com Clientes:
+
+
+SELECT Vendas.*, Clientes.nome AS cliente_nome
+FROM Vendas
+JOIN Clientes ON Vendas.vendido_para = Clientes.id;
+Juntar Nome do Produto da Tabela Vendas com Nome do Funcionário da Tabela Funcionários:
+
+SELECT Produtos.nome AS Nome_Produto, Funcionarios.nome AS Nome_Funcionario
+FROM Vendas
+JOIN Produtos ON Vendas.produto = Produtos.codigo
+JOIN Funcionarios ON Vendas.vendido_por = Funcionarios.matricula;

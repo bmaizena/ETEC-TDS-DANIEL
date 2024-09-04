@@ -1,0 +1,58 @@
+o que define sistema embarcado?
+
+ é um sistema computacional dedicado a realizar funções específicas, O principal aspecto que define um sistema embarcado é sua finalidade específica e a integração física com o dispositivo ou sistema em que está instalado.
+
+
+
+
+o que é um hardware open source?
+
+ refere-se a projetos de hardware cujos designs são disponibilizados ao público de forma aberta e livre
+
+
+
+
+
+o que é internet das coisas?
+
+
+A Internet das Coisas (IoT) descreve a rede de objetos físicos incorporados a sensores, software e outras tecnologias com o objetivo de conectar e trocar dados com outros dispositivos e sistemas pela internet.
+
+
+
+
+o que são microcontroladores?
+
+Microcontroladores são dispositivos eletrônicos integrados em um único chip que incorporam um processador, memória e periféricos de entrada/saída. Eles são projetados para executar tarefas específicas em sistemas embarcados.
+
+
+
+
+quais os dois tipos de blocos principais de programação no sistema arduíno?
+
+void loop e void setup
+
+
+
+
+qual a instruçao para definir um pino de entrada ou saida?
+
+pinMode(2, input ou output)
+
+
+
+
+qual a instrução para enviar um sinal para um pino digital?
+
+digitalWrite()
+
+
+
+qual a instrução para enviar um sinal para um pino analogico?
+analogWrite()
+
+
+
+qual a instrução para ler um sinal para um pino analogico?
+analogRead()
+
