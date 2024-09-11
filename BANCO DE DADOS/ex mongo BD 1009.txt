@@ -1,0 +1,21 @@
+use ('familia')
+-------------------------------------------------------------
+db.integrantes.insertMany([
+  {nome:"Liliane", idade: 45, cidade:"Jacupiranga"},
+  {nome: "Wandir", idade: 43, cidade:"Jacupiranga"}
+])
+-------------------------------------------------------------
+db.integrantes.insertOne(
+  {nome:"Ludinolison", idade: 76, cidade:"Pindamohangaba"}
+)
+-------------------------------------------------------------
+db.integrantes.updateOne(
+  {nome:"Ludinolison"},
+  {$set:{idade:33}}
+)
+-------------------------------------------------------------
+db.integrantes.find()
+-------------------------------------------------------------
+db.integrantes.deleteOne({nome: "Wandir"})
+-------------------------------------------------------------
+db.integrantes.find({nome:"Liliane"})
