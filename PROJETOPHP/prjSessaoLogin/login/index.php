@@ -25,7 +25,7 @@
 </head>
 <body>
     <main>
-        <h1>Login no Sitema</h1>
+        <h1>Login no Sistema</h1>
         <hr>
         <form action="./recLogin.php" method="POST">
             <input type="text" name="txtEmail" id="txtEmail" placeholder="Digite o email" required> <br><br>
